@@ -1,0 +1,244 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hello, how can I help you?",
+        "Hi there, how can I help you?",
+        "Hi, how can I help you?",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "Services",
+      "patterns": [
+        "What services do you provide?",
+        "What do you offer?",
+        "What are your services?",
+        "How can you help me?",
+
+        "What kinds of services do you provide?",
+        "What kinds of services do you offer?",
+        "What do you do?",
+        "What can you do?",
+        "What kinds of things do you do?",
+        "What kinds of things can you do?",
+        "What can you do for me?",
+        "What kinds of things can you do for me?",
+
+        "What do you sell?",
+        "What can you sell?",
+        "What kinds of things do you sell?",
+        "What kinds of things can you sell?",
+        "What do you sell here?",
+        "What can you sell here?"
+      ],
+      "responses": [
+        "App Development\nWeb Development\nAI Solutions\nMachine Learning Services\nData Science Related Services"
+      ]
+    },
+    {
+      "tag": "App Development",
+      "patterns": [
+        "what type of app services are available?",
+        "what kinds of app services are available?",
+        "what type of app services can you offer?",
+        "what kinds of app services can you offer?",
+        "what type of app services do you provide?",
+        "what kinds of app services do you provide?",
+        "what type of app services can you provide?",
+        "what kinds of app services can you provide?",
+        "what type of app services do you offer?",
+        "what kinds of app services do you offer?",
+        "what type of app services do you provide?",
+        "what kinds of app services do you provide?",
+        "what type of app services do you offer?",
+        "what kinds of app services do you offer?",
+        "what type of app services do you provide?",
+        "what kinds of app services do you provide?",
+        "what type of app services do you offer?",
+        "what kinds of app services do you offer?",
+        "what type of app services do you provide?",
+        "what kinds of app services do you provide?"
+      ],
+      "responses": [
+        "Our expert team crafts custom mobile applications that cater to your specific requirements. From design to deployment, we ensure a seamless and user-friendly experience, leveraging the latest technologies for optimal performance."
+      ]
+    },
+    {
+      "tag": "Web Development",
+      "patterns": [
+      "what type of web services are available?",
+      "what kinds of web services are available?",
+      "what type of web services can you offer?",
+      "what kinds of web services can you offer?",
+      "what type of web services can you provide?",
+      "what kinds of web services do you provide?",
+      "what type of web services do you offer?",
+      "what kinds of web services do you offer?",
+      "what type of web services do you provide?",
+      "what kinds of web services do you provide?",
+      "what type of web services do you offer?",
+      "what kinds of web services do you offer?",
+      "what type of web services do you provide?",
+      "what kinds of web services do you provide?",
+      "what type of web services do you offer?",
+      "what kinds of web services do you offer?",
+      "what type of web services do you provide?",
+      "what kinds of web services do you provide?",
+      "what type of web services do you offer?",
+      "what kinds of web services do you offer?",
+      "what type of web services do you provide?",
+      "what kinds of web services do you provide?",
+      "what type of web services do you offer?",
+      "what kinds of web services do you offer?",
+      "what type of web services do you provide?",
+      "what kinds of web services do you provide?",
+      "what type of web services do you offer?",
+      "what kinds of web services do you offer?",
+      "what type of web services do you provide?"
+      ],
+      "responses": [
+        "We offer a comprehensive range of web services to meet your business needs\nCustom Website Development: Tailored to your brand and objectives, our websites are designed to enhance your online presence.\nE-commerce Solutions: Robust e-commerce platforms for online sales and transactions.\nWeb Application Development: Custom web applications to streamline business processes.\nContent Management Systems (CMS): Easy-to-use CMS forWebsite Development: Custom websites tailored to your brand and objectives.\nE-commerce Solutions: Robust e-commerce platforms for online sales and transactions.\nWeb Application Development: Custom web applications to streamline business processes.\nContent Management Systems (CMS): Easy-to-use CMS for managing website content.\nSEO and Digital Marketing: Services to enhance online visibility and drive traffic.\nResponsive Design: Mobile-friendly designs for optimal user experience on all devices.\nMaintenance and Support: Ongoing support to keep your website updated and secure."
+      ]
+    },
+    {
+      "tag": "AI Solutions",
+      "patterns": [
+        "what type of AI solutions are available?",
+        "what kinds of AI solutions are available?",
+        "What exactly is AI and how can it benefit my business?",
+        "what type of AI solutions can you offer?",
+        "what kinds of AI solutions can you offer?",
+        "what type of AI solutions can you provide?",
+        "what kinds of AI solutions do you provide?",
+        "what type of AI solutions do you offer?",
+        "AI solutions",
+        "How can AI benefit my business?",
+        "Do you offer custom AI solutions?",
+        "Do you provide ongoing support and maintenance for AI models?",
+        "Do you offer training for our staff on using AI models?",
+        "What kind of ROI can we expect from implementing AI solutions?",
+        "What is the process for using your AI solutions?",
+        "How can you find insights in AI?",
+        "What is the process for training AI models?",
+        "How do you make sure your AI models are accurate?",
+        "What benefits can we get from your AI solutions?",
+        "How do your AI solutions handle complex data?",
+
+        "What kind of information can your AI solutions provide?",
+        "How do you keep up with new AI trends?",
+        "How fast can we see results from AI?"
+
+      ],
+      "responses": [
+        "We specialize in developing AI solutions that automate processes, analyze data for insights, and enhance decision-making capabilities. Our AI applications are designed to streamline operations and drive efficiency across various industries.",
+        "Our AI applications are designed to streamline operations and drive efficiency across various industries.",
+        "AI (Artificial Intelligence) refers to the ability of machines to mimic human cognitive functions like learning and problem-solving. Our AI solutions can automate tasks, improve decision-making, and generate valuable insights from your data, ultimately boosting efficiency and productivity."
+      ]
+    },
+    {
+      "tag": "Machine Learning Services",
+      "patterns": [
+        "what type of machine learning services are available?",
+        "what kinds of machine learning services are available?",
+        "what type of machine learning services can you offer?",
+        "what kinds of machine learning services can you offer?",
+        "what type of machine learning services can you provide?",
+        "what kinds of machine learning services do you provide?",
+        "what type of machine learning services do you offer?",
+        "machine learning services",
+        "How can machine learning benefit my business?",
+        "Do you offer custom machine learning solutions?",
+        "Do you provide ongoing support and maintenance for machine learning models?",
+        "Do you offer training for our staff on using machine learning models?",
+        "What kind of ROI can we expect from implementing machine learning solutions?"
+
+
+      ],
+      "responses": [
+        "Utilizing advanced Machine Learning algorithms, we build predictive models that empower businesses to forecast trends, manage risks, and optimize operations. Our ML solutions enable data-driven decision-making and foster innovation.",
+        "we provide comprehensive ongoing support and maintenance for machine learning models. Our services ensure that your models remain accurate, efficient, and up-to-date with the latest data and technological advancements."
+      ]
+    },
+    {
+      "tag": "Data Science Related Services",
+      "patterns": [
+        "What data science services do you offer?",
+        "What kinds of data science services do you offer?",
+        "What data science services can you offer?",
+        "What kinds of data science services can you offer?",
+        "What do you do with data?",
+        "What can you do with data?",
+        "What kinds of things can you do with data?",
+        "What makes your data science services special?",
+        "Can your data science services improve our decision-making?",
+        "How do you find insights in data?",
+        "What is the process for using your data science services?",
+        "How do you make sure your data is accurate?",
+        "What benefits can we get from your data science services?",
+        "How do your data science services handle complex data?",
+        "What kind of information can your data science services provide?",
+        "How do you keep up with new data science trends?",
+        "How fast can we see results from your data science services?",
+        "What expertise does your company offer in data science services?",
+        "Why should we choose your data science services over others?",
+        "Will your data science services enhance our decision-making capabilities?",
+        "How do you ensure the accuracy of the data used in your services?",
+        "What advantages can we expect from utilizing your data science services?",
+        "What are the challenges you anticipate facing with your data science services?",
+        "What types of actionable intelligence can your data science services provide?"
+      ],
+      "responses": [
+        "Our data science services analyze complex data to deliver valuable insights. We help businesses make informed decisions, drive growth, and optimize operations. Using advanced techniques, we ensure data accuracy and relevance. Our team stays current with the latest trends to provide top-notch services.",
+        "Our data science services offer comprehensive expertise in extracting insights from data. We stand out due to our innovative approach and tailored solutions. By leveraging advanced analytics, we empower businesses to make informed decisions. Our process involves meticulous analysis and interpretation to deliver actionable intelligence."
+      ]
+    },
+    {
+      "tag": "More Info",
+      "patterns": [
+        "I want more details?",
+        "I want to know more about your services?",
+        "Can you tell me more about your services?",
+        "Can you provide more information about your services?",
+        "What can you tell me about your services?",
+        "Can you tell me more about your services?",
+        "Can you provide more information about your services?",
+        "What can you tell me about your services?",
+        "Can you tell me more about your services?",
+        "Can you provide more information about your services?"
+
+
+      ],
+      "responses": [
+
+        "Please Contact Here : hradmin@dsparkai.com"
+      ]
+    }
+  ]
+}
