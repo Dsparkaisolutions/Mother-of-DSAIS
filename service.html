@@ -47,67 +47,65 @@
     <!-- Spinner End -->
 
     <!-- Topbar Start -->
-    <div class="container-fluid bg-dark py-2 d-none d-md-flex">
+    <div class="container-fluid bg-dark py-2 fixed-top topbar d-none d-md-flex">
         <div class="container">
             <div class="d-flex justify-content-between topbar">
                 <div class="top-info">
                     <small class="me-3 text-white-50"><a href="#"><i
                                 class="fas fa-map-marker-alt me-2 text-secondary"></i></a>DSAIS,AWFIS Workspace,First
-                        Floor,Chennai-97</small><br>
-
-                    <small class="me-3 text-white-50"><a href="#"><i
+                        Floor,Chennai-97</small>
+                        <div id="note" class="text-secondary "><small>Note: We Help you to grow your business</small></div>
+                     <small class="me-3 text-white-50"><a href="#"><i
                                 class="fas fa-envelope me-2 text-secondary"></i></a>sales@dsparkai.com</small>
                 </div>
             </div>
         </div>
     </div>
+
+
+    
     <!-- Topbar End -->
 
     <!-- Navbar Start -->
-    <div class="container-fluid bg-primary">
+    <div class="container-fluid bg-primary fixed-top navbar-custom">
         <div class="container">
-            <nav class="navbar navbar-dark navbar-expand-lg py-0">
-                <a href="index.html" class="navbar-brand">
-                    <h1 class="text-white fw-bold">DS<span class="text-secondary">AI</span><span
-                            class="text-white fw-bold">S</span></h1>
-
+          <nav class="navbar navbar-dark navbar-expand-lg py-0">
+            <a href="index.html" class="navbar-brand">
+              <h1 class="text-white fw-bold">DS<span class="text-secondary">AI</span><span class="text-white fw-bold">S</span></h1>
+            </a>
+            <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
+              <div class="navbar-nav ms-auto mx-xl-auto p-0">
+                <a href="index.html" class="nav-item nav-link ">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="service.html" class="nav-item nav-link active text-secondary">Services</a>
+                <a href="career.html" class="nav-item nav-link">Careers</a>
+                <a href="moredetails.html" class="nav-item nav-link">More Details</a>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+              </div>
+            </div>
+            <div class="d-none d-xl-flex flex-shrink-0">
+              <div id="phone-tada" class="d-flex align-items-center justify-content-center me-4">
+                <a href="" class="position-relative animated tada infinite">
+                  <i class="fa fa-phone-alt text-white fa-2x"></i>
+                  <div class="position-absolute" style="top: -7px; left: 20px;">
+                    <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                  </div>
                 </a>
-                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
-                    data-bs-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto mx-xl-auto p-0">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link active text-secondary">Services</a>
-                        <a href="career.html" class="nav-item nav-link">Careers</a>
-                        <a href="moredetails.html" class="nav-item nav-link">More details</a>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
-                    </div>
-                </div>
-                <div class="d-none d-xl-flex flex-shirink-0">
-                    <div id="phone-tada" class="d-flex align-items-center justify-content-center me-4">
-                        <a href="" class="position-relative animated tada infinite">
-                            <i class="fa fa-mobile-alt text-white fa-2x"></i>
-                            <div class="position-absolute" style="top: -7px; left: 20px;">
-                                <span><i class="fa fa-comment-dots text-secondary"></i></span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="d-flex flex-column pe-4 border-end">
-                        <span class="text-white-50">Have any questions?</span>
-                        <span class="text-secondary">Call:+91 44 4689 0443</span>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-center ms-4 ">
-                        <!--made changes-->
-                        <a href="contact.html#contact-form"><i class="bi bi-envelope text-white fa-2x"></i></a>
-
-                    </div>
-                </div>
-            </nav>
+              </div>
+              <div class="d-flex flex-column pe-4 border-end">
+                <span class="text-white-50">Have any questions?</span>
+                <span class="text-secondary">Call:+91 44 4689 0443</span>
+              </div>
+              <div class="d-flex align-items-center justify-content-center ms-4">
+                <a href="contact.html#contact-form"><i class="bi bi-envelope text-white fa-2x"></i></a>
+              </div>
+            </div>
+          </nav>
         </div>
-    </div>
+      </div>
     <!-- Navbar End -->
 
 
@@ -126,111 +124,111 @@
     </div>
     <!-- Page Header End -->
 
-
-    <!-- Services Start -->
-    <div class="container-fluid services py-5 my-5">
-        <div class="container py-5">
-            <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                <h1 class="text-primary">Our Services</h1>
-                <h3 class="text-light">Customized app development utilizing AI, ML, and Data Science for
-                    enhanced
-                    user experiences.</h3>
+  <!-- Services Start -->
+  <div class="container-fluid services py-5 my-5">
+    <div class="container py-5">
+        <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+            <h1 class="text-primary">Our Services</h1>
+            <h3 class="text-light">Customized app development utilizing AI, ML, and Data Science for
+                enhanced
+                user experiences.</h3>
+        </div>
+        <div class="row g-5 services-inner">
+            
+            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+                <div class="services-item bg-light">
+                    <div class="p-4 text-center services-content">
+                        <div class="services-content-icon serhover ">
+                            <i class="fa fa-file-code fa-7x mb-4 text-primary"></i>
+                            <h4 class="mb-3">Web And App Development</h4>
+                            <p class="mb-4 ">Crafting standout websites and apps, our team specializes in designing user-friendly, responsive sites customized to your requirements. Elevate your digital identity with our comprehensive web and app development solutions.</p>
+                            <a href="moredetails.html#wd"
+                                class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="row g-5 services-inner">
-                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
-                    <div class="services-item bg-light">
-                        <div class="p-4 text-center services-content">
-                            <div class="services-content-icon serhover ">
-                                <i class="fa fa-file-code fa-7x mb-4 text-primary"></i>
-                                <h4 class="mb-3">Web And App Development</h4>
-                                <p class="mb-4 text-dark ">Crafting standout websites and apps, our team specializes in designing user-friendly, responsive sites customized to your requirements. Elevate your digital identity with our comprehensive web and app development solutions.</p>
-                                <a href="moredetails.html#wd"
-                                    class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
-                            </div>
+            <div class="col-md-6 col-lg-4 wow fadeIn text-light" data-wow-delay=".7s">
+                <div class="services-item bg-light ">
+                    <div class="p-4 text-center services-content">
+                        <div class="services-content-icon serhover">
+                            <span class="material-symbols-outlined text-primary aihover"
+                                style="font-size:120px; ">psychology</span>
+                            <h4 class="mb-3">AI Solutions</h4>
+                            <p class="mb-4 text-dark ">We specialize in developing AI solutions that automate processes, analyze data for insights, and enhance decision-making, streamlining operations and driving efficiency across various industries. Explore how our advanced AI technology can transform your business.</p>
+                            <a href="moredetails.html#ai"
+                                class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 wow fadeIn text-light" data-wow-delay=".7s">
-                    <div class="services-item bg-light ">
-                        <div class="p-4 text-center services-content">
-                            <div class="services-content-icon serhover">
-                                <span class="material-symbols-outlined text-primary aihover"
-                                    style="font-size:80px; ">psychology</span>
-                                <h4 class="mb-3">AI Solutions</h4>
-                                <p class="mb-4 text-dark ">We specialize in developing AI solutions that automate processes, analyze data for insights, and enhance decision-making, streamlining operations and driving efficiency across various industries. Explore how our advanced AI technology can transform your business.</p>
-                                <a href="moredetails.html#ai"
-                                    class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
-                    <div class="services-item bg-light ">
-                        <div class="p-4 text-center services-content">
-                            <div class="services-content-icon serhover">
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                <div class="services-item bg-light ">
+                    <div class="p-4 text-center services-content">
+                        <div class="services-content-icon serhover">
 
-                                <i class="fa fa-mobile-alt fa-7x mb-4 text-primary"></i>
-                                <h4 class="mb-3">Mobile App Development</h4>
-                                <p class="mb-4 text-dark"  >
-                                    Transform your ideas into powerful mobile apps with our expert team, delivering intuitive, high-performance solutions that engage users and drive your business forward.We provide continuous support and
-                                    updates, ensuring your app remains effective and secure.</p>
-                                <a href="moredetails.html#mobi"
-                                    class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
-                            </div>
+                            <i class="fa fa-mobile-alt fa-7x mb-4 text-primary"></i>
+                            <h4 class="mb-3">Mobile App Development</h4>
+                            <p class="mb-4 "  >
+                                Transform your ideas into powerful mobile apps with our expert team, delivering intuitive, high-performance solutions that engage users and drive your business forward.We provide continuous support and
+                                updates, ensuring your app remains effective and secure.</p>
+                            <a href="moredetails.html#mobi"
+                                class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
-                    <div class="services-item bg-light">
-                        <div class="p-4 text-center services-content">
-                            <div class="services-content-icon serhover">
-                                <i class="fa fa-chart-line fa-7x mb-4 text-primary"></i>
-                                <h4 class="mb-3">Machine Learning</h4>
-                                <p class="mb-4 text-dark">Utilizing advanced Machine Learning algorithms,
-                                    we
-                                    build predictive models that empower businesses to forecast trends, manage
-                                    risks,
-                                    and optimize operations. Our ML solutions enable data-driven decision-making and
-                                    foster innovation.</p>
-                                <a href="moredetails.html#ml"
-                                    class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
-                            </div>
+            </div>
+            <div class=" col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                <div class="services-item bg-light">
+                    <div class="p-4 text-center services-content">
+                        <div class="services-content-icon serhover">
+                            <i class="fa fa-chart-line fa-7x mb-4 text-primary"></i>
+                            <h4 class="mb-3">Machine Learning</h4>
+                            <p class="mb-4  ">Utilizing advanced Machine Learning algorithms,
+                                we
+                                build predictive models that empower businesses to forecast trends, manage
+                                risks,
+                                and optimize operations. Our ML solutions enable data-driven decision-making and
+                                foster innovation.</p>
+                            <a href="moredetails.html#ml"
+                                class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
+                        </div>
 
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+                <div class="services-item bg-light">
+                    <div class="p-4 text-center services-content">
+                        <div class="services-content-icon serhover">
+                            <i class="fa fa-cloud fa-7x mb-4 text-primary"></i>
+                            <h4 class="mb-3">Cloud</h4>
+                            <p class="mb-4 " >Our advanced cloud services enable businesses to effortlessly scale, boost operational flexibility, and foster innovation. Leverage secure, scalable, and cost-effective cloud technologies to accelerate your journey towards digital transformation</p>
+                            <a href="moredetails.html#cl"
+                                class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
-                    <div class="services-item bg-light">
-                        <div class="p-4 text-center services-content">
-                            <div class="services-content-icon serhover">
-                                <i class="fa fa-cloud fa-7x mb-4 text-primary"></i>
-                                <h4 class="mb-3">Cloud</h4>
-                                <p class="mb-4 text-dark" >Our advanced cloud services enable businesses to effortlessly scale, boost operational flexibility, and foster innovation. Leverage secure, scalable, and cost-effective cloud technologies to accelerate your journey towards digital transformation</p>
-                                <a href="moredetails.html#cl"
-                                    class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
-                    <div class="services-item bg-light">
-                        <div class="p-4 text-center services-content">
-                            <div class="services-content-icon serhover">
-                                <i class="fa fa-database fa-7x mb-4 text-primary"></i>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+                <div class="services-item bg-light">
+                    <div class="p-4 text-center services-content">
+                        <div class="services-content-icon serhover">
+                            <i class="fa fa-database fa-7x mb-4 text-primary"></i>
 
-                                <h4 class="mb-3">Data Science</h4>
-                                <p class="mb-4 text-dark" >
-                                    We specialize in extracting valuable insights from complex datasets using data science expertise, leveraging data visualization and big data analytics to provide actionable intelligence that supports strategic decision-making and drives business growth.</p>
-                                <a href="moredetails.html#ds"
-                                    class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
-                            </div>
+                            <h4 class="mb-3">Data Science</h4>
+                            <p class="mb-4  " >
+                                We specialize in extracting valuable insights from complex datasets using data science expertise, leveraging data visualization and big data analytics to provide actionable intelligence that supports strategic decision-making and drives business growth.</p>
+                            <a href="moredetails.html#ds"
+                                class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Services End -->
+</div>
+<!-- Services End -->
 
 
     <!-- Footer Start -->
@@ -364,6 +362,23 @@
     <script src="js/main.js"></script>
     <script src="js/chatbot.js"></script>
     <script src="chat.js"></script>
+
+    
+    <!--NAVBAR SCROLL FORMAT-->
+    <script>
+        let lastScrollTop = 0;
+        window.addEventListener('scroll', function() {
+          let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+          if (currentScroll > lastScrollTop) {
+            // Scroll down
+            document.querySelector('.navbar-custom').classList.add('navbar-hidden');
+          } else {
+            // Scroll up
+            document.querySelector('.navbar-custom').classList.remove('navbar-hidden');
+          }
+          lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+        }, false);
+      </script>
 
    
 </body>
