@@ -15,8 +15,6 @@ class Chatbox {
 
         openButton.addEventListener('click', () => this.toggleState(chatBox))
 
-        // sendButton.addEventListener('click', () => this.onSendButton(chatBox))
-
         sendButton.addEventListener('click', () => {
             console.log('Send button clicked!');
             this.onSendButton(chatBox)
@@ -28,6 +26,13 @@ class Chatbox {
                 this.onSendButton(chatBox)
             }
         })
+
+        // Automatically open the chatbox after 2 minutes
+        setTimeout(() => {
+            if (!this.state) {
+                this.toggleState(chatBox);
+            }
+        }, 60000); // 1 minutes in milliseconds
     }
 
     toggleState(chatbox) {
@@ -51,8 +56,6 @@ class Chatbox {
         let msg1 = { name: "User", message: text1 }
         this.messages.push(msg1);
 
-     
-
         fetch('http://127.0.0.1:5000/predict', {
             method: 'POST',
             body: JSON.stringify({ message: text1 }),
@@ -60,41 +63,34 @@ class Chatbox {
             headers: {
               'Content-Type': 'application/json'
             },
-          })
-          .then(r => r.json())
-          .then(r => {
+        })
+        .then(r => r.json())
+        .then(r => {
             let msg2 = { name: "Sam", message: r.answer };
             this.messages.push(msg2);
-            this.updateChatText(chatbox)
-            textField.value = ''
-
-           
-
+            this.updateChatText(chatbox);
+            textField.value = '';
         }).catch((error) => {
             console.error('Error:', error);
-            this.updateChatText(chatbox)
-            textField.value = ''
-          });
+            this.updateChatText(chatbox);
+            textField.value = '';
+        });
     }
 
     updateChatText(chatbox) {
         var html = '';
         this.messages.slice().reverse().forEach(function(item, index) {
-            if (item.name === "Sam")
-            {
+            if (item.name === "Sam") {
                 html += '<div class="messages__item messages__item--visitor">' + item.message + '</div>'
-            }
-            else
-            {
+            } else {
                 html += '<div class="messages__item messages__item--operator">' + item.message + '</div>'
             }
-          });
+        });
 
         const chatmessage = chatbox.querySelector('.chatbox__messages');
         chatmessage.innerHTML = html;
     }
 }
-
 
 const chatbox = new Chatbox();
 chatbox.display();
