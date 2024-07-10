@@ -93,7 +93,8 @@ body {
     letter-spacing: 1px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    align-items: center;
+    flex-wrap: nowrap;
     gap: 10px;
 }
 
@@ -108,27 +109,31 @@ body {
 }
 
 #note {
-    width: 500px;
+    flex-grow: 1;
     overflow:hidden;
+    text-align: center;
 }
 
 #note small {
     position: relative;
     display: inline-block;
     animation: mymove 15s infinite;
-    animation-timing-function: all;
+    animation-timing-function: linear;
 }
 
 @keyframes mymove {
     from {
-        left: -100%;
+        transform: translateX(-100%);
     }
 
     to {
-        left: 100%;
+         transform: translateX(100%);
     }
 }
-
+.email-info {
+    margin-left: 100px;
+    white-space: nowrap;
+}
 /*** Topbar End ***/
 
 
@@ -374,6 +379,8 @@ body {
 .page-header {
     background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/AITitle.jpg) center center no-repeat;
     background-size: cover;
+    
+    
 }
 
 .page-header .breadcrumb-item+.breadcrumb-item::before {
@@ -639,7 +646,7 @@ body {
             flex: 0 0 100%;
         }
         .contact-detail .h6 {
-            font-size: 1rem;
+            font-size: 1rem; /*changes 1rem*/
         }
     
 
