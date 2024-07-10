@@ -93,7 +93,8 @@ body {
     letter-spacing: 1px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    align-items: center;
+    flex-wrap: nowrap;
     gap: 10px;
 }
 
@@ -108,27 +109,31 @@ body {
 }
 
 #note {
-    width: 500px;
+    flex-grow: 1;
     overflow:hidden;
+    text-align: center;
 }
 
 #note small {
     position: relative;
     display: inline-block;
-    animation: mymove 5s infinite;
-    animation-timing-function: all;
+    animation: mymove 15s infinite;
+    animation-timing-function: linear;
 }
 
 @keyframes mymove {
     from {
-        left: -100%;
+        transform: translateX(-100%);
     }
 
     to {
-        left: 100%;
+         transform: translateX(100%);
     }
 }
-
+.email-info {
+    margin-left: 100px;
+    white-space: nowrap;
+}
 /*** Topbar End ***/
 
 
@@ -217,7 +222,7 @@ body {
 
 .carousel-control-prev {
     width: 85px;
-    height: 60px;
+    height: 60px;  /*change incase height different then apply 58 in mediaquery and this line also */
     position: absolute;
     
     top: 40%;
@@ -285,13 +290,21 @@ body {
     border-radius: 20px;
 }
 
+#carouselId .carousel-indicators {
+    list-style: none; /* Remove default list styles */
+    padding: 0;
+    text-align: center; /* Center align indicators */
+}
+
 #carouselId .carousel-indicators li {
+    display: inline-block; /* Display indicators horizontally */
     width: 30px;
     height: 10px;
     background: var(--bs-primary);
     margin: 10px;
     border-radius: 30px;
     opacity: 1;
+    cursor: pointer; /* Change cursor to pointer on hover */
 }
 
 #carouselId .carousel-indicators li:hover {
@@ -299,6 +312,10 @@ body {
     opacity: 1;
 }
 
+/* Style for active indicator */
+#carouselId .carousel-indicators li.active {
+    background: var(--bs-secondary);
+}
 @media (max-width: 992px) {
     .carousel-item {
         min-height: 500px;
@@ -362,6 +379,8 @@ body {
 .page-header {
     background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/AITitle.jpg) center center no-repeat;
     background-size: cover;
+    
+    
 }
 
 .page-header .breadcrumb-item+.breadcrumb-item::before {
@@ -437,8 +456,9 @@ body {
 }
 
 .serhover:hover p {
-    color: #151212 !important;
+    color: #fcf4f4 !important;
 } 
+
 
 /*
 
@@ -626,7 +646,7 @@ body {
             flex: 0 0 100%;
         }
         .contact-detail .h6 {
-            font-size: 1rem;
+            font-size: 1rem; /*changes 1rem*/
         }
     
 
@@ -664,6 +684,8 @@ body {
             font-size: 16px; /* Adjust font size */
         }
     }
+
+  
 /***Contact end
 
 /*** Footer Start ***/
