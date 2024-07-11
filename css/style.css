@@ -117,7 +117,7 @@ body {
 #note small {
     position: relative;
     display: inline-block;
-    animation: mymove 15s infinite;
+    animation: mymove 17s infinite;
     animation-timing-function: linear;
 }
 
