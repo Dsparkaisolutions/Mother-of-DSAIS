@@ -6,7 +6,7 @@
     $message = $_POST['message'] ?? '';
 
     // Database connection
-    $conn = new mysqli('localhost', 'root', '', 'datasparkaisolutions');
+    $conn = new mysqli('localhost', 'u768539030_datasparkai', 'Dsais@123', 'u768539030_dsais');
     if ($conn->connect_error) {
         die("Connection Failed : " . $conn->connect_error);
     }
@@ -20,7 +20,7 @@
     if ($result->num_rows > 0) {
         // Details already exist
         echo "<script>alert('Details are already stored.');</script>";
-        echo "<script>window.location.href = 'http://localhost/Mother-of-DSAIS/index.html';</script>";
+        echo "<script>window.location.href = 'https://dsparkai.com/contact.html';</script>";
     } else {
         // Prepare SQL statement to insert data into 'contact' table
         $stmt = $conn->prepare("INSERT INTO contact(yourname, youremail, mobilenumber, message) VALUES (?, ?, ?, ?)");
@@ -54,7 +54,7 @@
             echo "<script>alert('Registered successfully.');</script>";
             
             // Redirect after successful submission
-            echo "<script>window.location.href = 'http://localhost/Mother-of-DSAIS/index.html';</script>";
+            echo "<script>window.location.href = 'https://dsparkai.com/index.html';</script>";
         } else {
             // Registration failed
             echo "<script>alert('Error: Failed to register.');</script>";
