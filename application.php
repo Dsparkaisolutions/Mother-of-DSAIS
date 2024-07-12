@@ -1,6 +1,6 @@
 <?php
 // Database connection
-$conn = new mysqli('localhost', 'root', '', 'datasparkaisolutions');
+$conn = new mysqli('localhost', 'u768539030_datasparkai', 'Dsais@123', 'u768539030_dsais');
 
 // Check connection
 if ($conn->connect_error) {
@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Show popup with existing details and redirect
         echo "<script>
                 alert('Details already exist');
-                window.location.href = 'http://localhost/Mother-of-DSAIS/career.html';
+                window.location.href = 'https://dsparkai.com/career.html';
               </script>";
     } else {
         // Store details in the database
@@ -61,12 +61,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 // Show popup for successful registration and redirect
                 echo "<script>
                         alert('Registration successful');
-                        window.location.href = 'http://localhost/Mother-of-DSAIS/index.html';
+                        window.location.href = 'https://dsparkai.com/index.html';
                       </script>";
             } else {
                 echo "<script>
                         alert('ERROR IS UPLOADING FILE');
-                        window.location.href = 'http://localhost/Mother-of-DSAIS/index.html';
+                        window.location.href = 'https://dsparkai.com/index.html';
                       </script>";
             }
                 } else {
