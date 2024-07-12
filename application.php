@@ -55,7 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Move uploaded resume to the designated folder
             if (move_uploaded_file($_FILES['resume']['tmp_name'], "uploads/" . basename($resume))) {
                 // Call Python script to send an email
-                $command = escapeshellcmd("python3 send1_email.py '$name' '$email' '$mobile' '$dob' '$message' '$resume' '$link'");
+                $command = escapeshellcmd("python3 /home/u768539030/domains/dsparkai.com/public_html/send1_email.py'$name' '$email' '$mobile' '$dob' '$message' '$resume' '$link'");
                 shell_exec($command);
 
                 // Show popup for successful registration and redirect
