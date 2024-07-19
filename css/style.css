@@ -212,7 +212,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1;
+    
 }
 
 .carousel-item p {
@@ -224,7 +224,6 @@ body {
     width: 85px;
     height: 60px;  /*change incase height different then apply 58 in mediaquery and this line also */
     position: absolute;
-    
     top: 40%;
     left: 0;
     background: var(--bs-primary);
@@ -294,6 +293,8 @@ body {
     list-style: none; /* Remove default list styles */
     padding: 0;
     text-align: center; /* Center align indicators */
+    z-index: 1;     
+    
 }
 
 #carouselId .carousel-indicators li {
@@ -315,6 +316,7 @@ body {
 /* Style for active indicator */
 #carouselId .carousel-indicators li.active {
     background: var(--bs-secondary);
+    
 }
 @media (max-width: 992px) {
     .carousel-item {
