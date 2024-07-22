@@ -182,10 +182,30 @@
                                 <small class="form-text" style="color: white;">Provide an optional link (e.g.,
                                     portfolio, LinkedIn profile,Resume drive link).</small>
                             </div>
+
+                            <!-- capcha -->
+
+                            <div class="mb-4">
+                                <div id="captcha-container" class="d-flex align-items-center">
+                                    <span id="captcha" class="me-2"></span>
+                                    <button type="button" id="refresh-captcha" class="btn btn-outline-secondary p-0">
+                                        <i class="fas fa-sync-alt"></i>
+                                    </button>
+                                </div>
+                                <input type="text" class="form-control border-0 py-3" placeholder="Enter captcha" id="captcha-input" name="captcha-input" required>
+                            </div>
                             <div class="col-12">
+                                <button class="btn btn-primary w-100 py-3 bg-primary text-light" type="submit" id="submit-btn">Send Message</button>
+                            </div>
+
+
+
+
+
+                            <!-- <div class="col-12">
                                 <button class="btn btn-primary w-100 py-3 bg-primary text-light "
                                     type="submit">Send Message</button>
-                            </div>
+                            </div> -->
                         </div>
                     </form>
 

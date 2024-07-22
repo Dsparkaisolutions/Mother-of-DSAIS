@@ -137,3 +137,32 @@ function validateAge() {
 }
 
 
+//capcha validation
+document.addEventListener('DOMContentLoaded', function() {
+    const captchaSpan = document.getElementById('captcha');
+    const refreshCaptchaButton = document.getElementById('refresh-captcha');
+    const captchaInput = document.getElementById('captcha-input');
+    const submitButton = document.getElementById('submit-btn');
+    let captchaText = '';
+
+    function generateCaptcha() {
+        const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        let result = '';
+        for (let i = 0; i < 6; i++) {
+            result += characters.charAt(Math.floor(Math.random() * characters.length));
+        }
+        captchaText = result;
+        captchaSpan.textContent = captchaText;
+    }
+
+    refreshCaptchaButton.addEventListener('click', generateCaptcha);
+    generateCaptcha();
+
+    submitButton.addEventListener('click', function(event) {
+        if (captchaInput.value !== captchaText) {
+            event.preventDefault();
+            alert('Captcha verification failed. Please try again.');
+            generateCaptcha();
+        }
+    });
+});
