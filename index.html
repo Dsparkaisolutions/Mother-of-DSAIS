@@ -518,34 +518,42 @@
 
                         <div class="col-lg-6 wow fadeIn" data-wow-delay=".5s">
                             <div class="p-5 rounded contact-form bg-primary">
-                                <form id="contact-form" action="contact.php" method="POST" name="enquiry">
-                                    <div class="mb-4">
-                                        <input type="text" class="form-control border-0 py-3" placeholder="Your Name" id="yourname" name="yourname" required minlength="2" maxlength="100">
+                                <form id="contact-form" action="contact.php" method="POST" name="enquiry"
+                                onsubmit="return validateForm()">
+                                <div class="mb-4">
+                                    <input type="text" class="form-control border-0 py-3" placeholder="Your Name"
+                                        id="yourname" name="yourname" required minlength="2" maxlength="100">
+                                </div>
+                                <div class="mb-4">
+                                    <input type="email" class="form-control border-0 py-3" placeholder="Your Email"
+                                        id="youremail" name="youremail" required>
+                                </div>
+                               
+                                <div class="mb-4">
+                                    <input type="number" class="form-control border-0 py-3" placeholder="Mobile Number"
+                                        id="mobilenumber" name="mobilenumber" required pattern="^\d{10}$">
+                                </div>
+                                <div class="mb-4">
+                                    <textarea class="w-100 form-control border-0 py-3" rows="6" cols="10"
+                                        placeholder="Please enter your enquiry here. A minimum of 500 words is required."
+                                        id="message" name="message" required minlength="10" maxlength="500"></textarea>
+                                </div>
+                                <div class="mb-4">
+                                    <div id="captcha-container" class="d-flex align-items-center">
+                                        <span id="captcha" class="me-2"></span>
+                                        <button type="button" id="refresh-captcha"
+                                            class="btn btn-outline-secondary p-0">
+                                            <i class="fas fa-sync-alt"></i>
+                                        </button>
                                     </div>
-                                    <div class="mb-4">
-                                        <input type="email" class="form-control border-0 py-3" placeholder="Your Email" id="youremail" name="youremail" required>
-                                    </div>
-                                    <div class="mb-4">
-                                        <input type="number" class="form-control border-0 py-3" placeholder="Mobile Number" id="mobilenumber" name="mobilenumber" required pattern="^\d{10}$">
-                                    </div>
-                                    <div class="mb-4">
-                                        <textarea class="w-100 form-control border-0 py-3" rows="6" cols="10" placeholder="Please enter your enquiry here. A minimum of 500 words is required." id="message" name="message" required minlength="10" maxlength="500"></textarea>
-                                    </div>
-                                    <div class="mb-4">
-                                        <div id="captcha-container" class="d-flex align-items-center">
-                                            <span id="captcha" class="me-2"></span>
-                                            <button type="button" id="refresh-captcha" class="btn btn-outline-secondary p-0">
-                                                <i class="fas fa-sync-alt"></i>
-                                            </button>
-                                        </div>
-                                        <input type="text" class="form-control border-0 py-3" placeholder="Enter captcha" id="captcha-input" name="captcha-input" required>
-                                    </div>
-                                    <div class="text-start">
-                                        <button class="btn bg-white btn-custom" type="submit" id="submit-btn">Submit</button>
-                                    </div>
-                                    
-    
-                                </form>
+                                    <input type="text" class="form-control border-0 py-3" placeholder="Enter captcha"
+                                        id="captcha-input" name="captcha-input" required>
+                                </div>
+                                <div class="text-start">
+                                    <button class="btn bg-white btn-custom" type="submit"
+                                        id="submit-btn">Submit</button>
+                                </div>
+                            </form>
                             </div>
                         </div>
                     </div>
@@ -708,7 +716,7 @@
     </script>
 <!--contact message change-->
 
-    <script>
+    <!-- <script>
           function validateTextarea() {
         const textarea = document.getElementById('message').value;
         const linkPattern = /(http:\/\/|https:\/\/|www\.)[a-z0-9\-]+\.[a-z]{2,}(\S*)?/gi;
@@ -719,7 +727,7 @@
         }
         return true;
     }
-    </script>
+    </script> -->
 </body>
 
 </html>

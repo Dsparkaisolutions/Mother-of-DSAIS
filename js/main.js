@@ -111,8 +111,7 @@
 
 })(jQuery);
 
-// age validation
-
+// Age validation
 function validateAge() {
     var dobInput = document.getElementById('dob').value;
     var dob = new Date(dobInput);
@@ -136,8 +135,7 @@ function validateAge() {
     return true;
 }
 
-
-//capcha validation
+// Captcha validation
 document.addEventListener('DOMContentLoaded', function() {
     const captchaSpan = document.getElementById('captcha');
     const refreshCaptchaButton = document.getElementById('refresh-captcha');
@@ -166,3 +164,20 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+// Link validation
+function containsLink(text) {
+    const urlPattern = /https?:\/\/[^\s]+/g;
+    return urlPattern.test(text);
+}
+
+function validateForm() {
+    const messageInput = document.getElementById('message');
+    const message = messageInput.value;
+    if (containsLink(message)) {
+        alert('Links are not allowed in the enquiry message.');
+        return false;
+    }
+
+    return validateAge();
+}
