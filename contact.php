@@ -6,7 +6,7 @@
     $message = $_POST['message'] ?? '';
 
     // Database connection
-    $conn = new mysqli('localhost', 'root', '', 'datasparkaisolutions');
+    $conn = new mysqli('localhost', 'u768539030_datasparkai', 'Dsais@123', 'u768539030_dsais');
     if ($conn->connect_error) {
         die("Connection Failed : " . $conn->connect_error);
     }
@@ -20,7 +20,7 @@
     if ($result->num_rows > 0) {
         // Details already exist
         echo "<script>alert('Details are already stored.');</script>";
-        echo "<script>window.location.href = 'http://localhost/Mother-of-DSAIS/index.html';</script>";
+        echo "<script>window.location.href = 'https://dsparkai.com/contact.html';</script>";
     } else {
         // Prepare SQL statement to insert data into 'contact' table
         $stmt = $conn->prepare("INSERT INTO contact(yourname, youremail, mobilenumber, message) VALUES (?, ?, ?, ?)");
@@ -46,7 +46,7 @@
         // Proceed with sending email if database insertion was successful
         if ($execval) {
             // Call Python script to send email with arguments
-            $command = "python send_email.py \"$yourname\" \"$youremail\" \"$mobilenumber\" \"$message\"";
+            $command = "python3 /home/u768539030/domains/dsparkai.com/public_html/send_email.py \"$yourname\" \"$youremail\" \"$mobilenumber\" \"$message\"";
             $output = shell_exec($command); 
             // Assuming send_email.py handles sending and returns relevant output
             
@@ -54,7 +54,7 @@
             echo "<script>alert('Registered successfully.');</script>";
             
             // Redirect after successful submission
-            echo "<script>window.location.href = 'http://localhost/Mother-of-DSAIS/index.html';</script>";
+            echo "<script>window.location.href = 'https://dsparkai.com/index.html';</script>";
         } else {
             // Registration failed
             echo "<script>alert('Error: Failed to register.');</script>";
